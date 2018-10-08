@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20180917 15:22:18.716">
+<suite id="s1" name="Abc" source="C:\Users\supriya_meshram\PycharmProjects\Robot-Framework\Test\abc.robot">
+<test id="s1-t1" name="Login attempt with valid username and password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180917 15:22:20.080" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/index.php?option=com_users&amp;view=login&amp;Itemid=587'.</msg>
+<status status="PASS" starttime="20180917 15:22:20.080" endtime="20180917 15:23:02.763"></status>
+</kw>
+<kw name="Enter username and password">
+<arguments>
+<arg>supriya123</arg>
+<arg>sampada123</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : username</arg>
+<arg>${username1}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:02.765" level="INFO">Typing text 'supriya123' into text field 'name : username'.</msg>
+<status status="PASS" starttime="20180917 15:23:02.764" endtime="20180917 15:23:14.261"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : password</arg>
+<arg>${password1}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:14.262" level="INFO">Typing text 'sampada123' into text field 'name : password'.</msg>
+<status status="PASS" starttime="20180917 15:23:14.262" endtime="20180917 15:23:17.487"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:02.764" endtime="20180917 15:23:17.488"></status>
+</kw>
+<kw name="Click the login button">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath : .//*[@class='button']</arg>
+</arguments>
+<msg timestamp="20180917 15:23:17.490" level="INFO">Clicking button 'xpath : .//*[@class='button']'.</msg>
+<status status="PASS" starttime="20180917 15:23:17.489" endtime="20180917 15:23:22.931"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:17.489" endtime="20180917 15:23:22.931"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180917 15:23:22.953" endtime="20180917 15:23:26.395"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:22:20.079" endtime="20180917 15:23:26.396" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Login attempt with invalid username and valid password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:26.416" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/index.php?option=com_users&amp;view=login&amp;Itemid=587'.</msg>
+<status status="PASS" starttime="20180917 15:23:26.416" endtime="20180917 15:23:42.838"></status>
+</kw>
+<kw name="Enter username and password">
+<arguments>
+<arg>supriya</arg>
+<arg>sampada123</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : username</arg>
+<arg>${username1}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:42.852" level="INFO">Typing text 'supriya' into text field 'name : username'.</msg>
+<status status="PASS" starttime="20180917 15:23:42.851" endtime="20180917 15:23:43.150"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : password</arg>
+<arg>${password1}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:43.150" level="INFO">Typing text 'sampada123' into text field 'name : password'.</msg>
+<status status="PASS" starttime="20180917 15:23:43.150" endtime="20180917 15:23:43.418"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:42.850" endtime="20180917 15:23:43.419"></status>
+</kw>
+<kw name="Click the login button">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath : .//*[@class='button']</arg>
+</arguments>
+<msg timestamp="20180917 15:23:43.421" level="INFO">Clicking button 'xpath : .//*[@class='button']'.</msg>
+<status status="PASS" starttime="20180917 15:23:43.420" endtime="20180917 15:23:45.298"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:43.420" endtime="20180917 15:23:45.298"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180917 15:23:45.300" endtime="20180917 15:23:48.500"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:26.415" endtime="20180917 15:23:48.500" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Login attempt with valid username and invalid password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:48.507" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/index.php?option=com_users&amp;view=login&amp;Itemid=587'.</msg>
+<status status="PASS" starttime="20180917 15:23:48.504" endtime="20180917 15:23:59.316"></status>
+</kw>
+<kw name="Enter username and password">
+<arguments>
+<arg>supriya123</arg>
+<arg>sampada</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : username</arg>
+<arg>${username1}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:59.331" level="INFO">Typing text 'supriya123' into text field 'name : username'.</msg>
+<status status="PASS" starttime="20180917 15:23:59.331" endtime="20180917 15:23:59.751"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : password</arg>
+<arg>${password1}</arg>
+</arguments>
+<msg timestamp="20180917 15:23:59.752" level="INFO">Typing text 'sampada' into text field 'name : password'.</msg>
+<status status="PASS" starttime="20180917 15:23:59.751" endtime="20180917 15:24:00.014"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:59.330" endtime="20180917 15:24:00.015"></status>
+</kw>
+<kw name="Click the login button">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath : .//*[@class='button']</arg>
+</arguments>
+<msg timestamp="20180917 15:24:00.017" level="INFO">Clicking button 'xpath : .//*[@class='button']'.</msg>
+<status status="PASS" starttime="20180917 15:24:00.017" endtime="20180917 15:24:01.744"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:24:00.016" endtime="20180917 15:24:01.745"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180917 15:24:01.748" endtime="20180917 15:24:04.998"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:23:48.502" endtime="20180917 15:24:04.999" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Login attempt with invalid username and invalid password">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180917 15:24:05.002" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/index.php?option=com_users&amp;view=login&amp;Itemid=587'.</msg>
+<status status="PASS" starttime="20180917 15:24:05.001" endtime="20180917 15:24:15.623"></status>
+</kw>
+<kw name="Enter username and password">
+<arguments>
+<arg>supriya</arg>
+<arg>sampada</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : username</arg>
+<arg>${username1}</arg>
+</arguments>
+<msg timestamp="20180917 15:24:15.626" level="INFO">Typing text 'supriya' into text field 'name : username'.</msg>
+<status status="PASS" starttime="20180917 15:24:15.625" endtime="20180917 15:24:15.895"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name : password</arg>
+<arg>${password1}</arg>
+</arguments>
+<msg timestamp="20180917 15:24:15.896" level="INFO">Typing text 'sampada' into text field 'name : password'.</msg>
+<status status="PASS" starttime="20180917 15:24:15.896" endtime="20180917 15:24:16.118"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:24:15.625" endtime="20180917 15:24:16.119"></status>
+</kw>
+<kw name="Click the login button">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath : .//*[@class='button']</arg>
+</arguments>
+<msg timestamp="20180917 15:24:16.120" level="INFO">Clicking button 'xpath : .//*[@class='button']'.</msg>
+<status status="PASS" starttime="20180917 15:24:16.119" endtime="20180917 15:24:17.516"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:24:16.119" endtime="20180917 15:24:17.517"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180917 15:24:17.520" endtime="20180917 15:24:20.696"></status>
+</kw>
+<status status="PASS" starttime="20180917 15:24:05.000" endtime="20180917 15:24:20.697" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180917 15:22:19.523" endtime="20180917 15:24:20.699"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Abc">Abc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
