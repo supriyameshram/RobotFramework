@@ -24,13 +24,13 @@ Login attempt with valid username and password
 
 Login attempt with invalid username and valid password
     Open Browser    ${URL}  ${Browser}
-    Enter username and password     supriya     sampada123
+    Enter username and password     supriya     sampada
     Click the login button
     Close Browser
 
 Login attempt with valid username and invalid password
     Open Browser    ${URL}  ${Browser}
-    Enter username and password     supriya123      sampada
+    Enter username and password     supriya     sampada
     Click the login button
     Close Browser
 
